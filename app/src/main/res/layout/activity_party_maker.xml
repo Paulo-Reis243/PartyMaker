@@ -17,13 +17,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_logo_teste"
         android:layout_gravity="center_horizontal"
-        android:scaleType="centerCrop" />/>/>
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:text="Nome do Evento"
         android:textColor="#F3F2F2"
         android:textSize="16sp"
@@ -36,7 +36,7 @@
         android:layout_width="313dp"
         android:layout_height="44dp"
         android:background="@android:color/background_light"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,20 +49,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="60px"
+            android:layout_height="100px"
+            android:layout_weight="1" />
+
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginLeft="56dp"
-            android:layout_marginEnd="137dp"
-            android:layout_marginRight="137dp"
             android:text="Data"
             android:textColor="#F3F2F2"
             android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+        <Space
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:layout_weight="1" />
 
         <TextView
             android:id="@+id/textView"
@@ -80,15 +86,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="60px"
+            android:layout_height="100px"
+            android:layout_weight="1" />
+
         <EditText
             android:id="@+id/data"
             android:layout_width="142dp"
             android:layout_height="39dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="25dp"
             android:background="@android:color/background_light"
             android:ems="10"
             android:inputType="date"
@@ -96,6 +102,11 @@
             app:layout_constraintEnd_toStartOf="@+id/horario"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <Space
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:layout_weight="1" />
 
         <EditText
             android:id="@+id/horario"
@@ -113,7 +124,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:text="Endereço"
         android:textColor="#F3F2F2"
         android:textSize="16sp"
@@ -125,7 +136,7 @@
         android:id="@+id/endereco"
         android:layout_width="323dp"
         android:layout_height="37dp"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
@@ -139,7 +150,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:text="Informações adcionais"
         android:textColor="#F3F2F2"
         android:textSize="16sp"
@@ -151,7 +162,7 @@
         android:id="@+id/obs"
         android:layout_width="323dp"
         android:layout_height="37dp"
-        android:layout_marginLeft="140px"
+        android:layout_marginLeft="60px"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
@@ -185,16 +196,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/obs" />
 
+        <Space
+            android:layout_width="200px"
+            android:layout_height="100px" />
+
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="138dp"
-            android:layout_marginLeft="138dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="33dp"
-            android:layout_marginRight="33dp"
-            android:layout_marginBottom="33dp"
             android:background="@android:color/transparent"
             android:onClick="onBack"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -54,7 +54,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:onClick="onWhats"
-            app:srcCompat="@mipmap/ic_logo_whatsizap" />
+            app:srcCompat="@mipmap/ic_logo_whats2" />
 
     </LinearLayout>
 
