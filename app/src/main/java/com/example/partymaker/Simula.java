@@ -42,6 +42,7 @@ public class Simula extends AppCompatActivity implements AdapterView.OnItemSelec
         String numPessoa = numeroPessoa.getText().toString();
         String price = preco.getText().toString();
         String sms = "";
+        String sms2 = "";
 
         if(numPessoa.trim().isEmpty() || price.trim().isEmpty()){
             sms = "Campos vazio!";
@@ -49,12 +50,14 @@ public class Simula extends AppCompatActivity implements AdapterView.OnItemSelec
             double valor1 = Double.parseDouble(numeroPessoa.getText().toString());
             double valor2 = Double.parseDouble(preco.getText().toString());
             double resultado = (valor1*variancia)*valor2;
+            double resultadopp = resultado/valor1;
             sms = " " + resultado;
+            sms2 = " " + resultadopp;
         }
 
 
         AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-        dlg.setMessage("O resultado é: " + sms);
+        dlg.setMessage("O resultado é: " + sms + "\nValor por pessoa: " + sms2);
         dlg.setNegativeButton("Ok", null);
         dlg.create().show();
     }
@@ -78,11 +81,6 @@ public class Simula extends AppCompatActivity implements AdapterView.OnItemSelec
                 variancia = 0.1;
                 break;
             case 3:
-                value = "Chá";
-                number = "5,50";
-                variancia = 0.1;
-                break;
-            case 4:
                 value = "";
                 number = "";
                 variancia = 0.0;
